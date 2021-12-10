@@ -444,29 +444,37 @@
             </p>
 
             <div class="contatoCampo contatoCampo--sucesso">
-              <label>Nome: </label>
+              <label for="nome">Nome: </label>
               <input
                 type="text"
                 class="contatoCampo--validouFoi"
-                value="Natan Souza"
+                placeholder="nome..."
                 required
+                id="nome"
               />
             </div>
 
             <div class="contatoCampo contatoCampo--erro">
-              <label>Email: </label>
-              <input type="email" class="contatoCampo--validouErro" required />
+              <label for="email">Email: </label>
+              <input
+                type="email"
+                class="contatoCampo--validouErro"
+                required
+                id="email"
+                placeholder="email..."
+              />
               <span class="contatoCampo-msg contatoCampo-msg--erro">
                 Você quis dizer <a href="#">gmail.com?</a>
               </span>
             </div>
 
             <div class="contatoCampo contatoCampo--erro">
-              <label>Telefone: </label>
+              <label for="telefone">Telefone: </label>
               <input
                 type="text"
                 class="contatoCampo--validouErro"
                 placeholder="(11) 5571-2751"
+                id="telefone"
               />
               <span class="contatoCampo-msg contatoCampo-msg--erro"
                 >Faltou o DDD</span
@@ -474,12 +482,13 @@
             </div>
 
             <div class="contatoCampo">
-              <label>CEP: </label>
+              <label for="cep">CEP: </label>
               <input
                 type="text"
                 maxlength="8"
                 placeholder="Exemplo: 04101-300"
                 required
+                id="cep"
               />
             </div>
 
@@ -490,6 +499,7 @@
                 class="contatoCampo-campoDesabilitado"
                 disabled
                 value="Rua Vergueiro"
+                readonly
               />
             </div>
 
@@ -500,6 +510,7 @@
                 class="contatoCampo-campoDesabilitado"
                 disabled
                 value="Vila Mariana"
+                readonly
               />
             </div>
 
@@ -510,6 +521,7 @@
                 class="contatoCampo-campoDesabilitado"
                 disabled
                 value="São Paulo"
+                readonly
               />
             </div>
 
@@ -520,6 +532,7 @@
                 class="contatoCampo-campoDesabilitado"
                 disabled
                 value="SP"
+                readonly
               />
             </div>
 
