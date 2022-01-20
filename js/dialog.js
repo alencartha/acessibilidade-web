@@ -4,7 +4,7 @@ var dialog = document.querySelector('.dialogNewsletter');
 var dialogBody = document.querySelector('.dialogNewsletter-body');
 var dialogOverlay = document.querySelector('.dialogNewsletter-overlay');
 var conteudoForaDialog = document.querySelector('#conteudoForaDialog');
-var video =  document.querySelector('video');
+var video = document.querySelector('video');
 
 btnAbreDialog.style.display = 'block'
 
@@ -26,3 +26,16 @@ function fechandoDialog() {
 
 // Listeners
 document.querySelector('.dialogNewsletter-fechar').addEventListener('click', fechandoDialog);
+
+
+document.addEventListener('keyup', function (evento) {
+  console.log(evento)
+  if (evento.code == 'Escape') {
+    fechandoDialog()
+  }
+
+})
+
+document.querySelector('.dialogNewsletter-overlay').addEventListener('click',()=>{
+  fechandoDialog()
+})
