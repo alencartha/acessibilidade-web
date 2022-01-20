@@ -337,11 +337,11 @@
           </h2>
 
           <form class="secaoContato-form">
-
-            <p class="secaoContato-form-legend">
+            <fieldset>
+            <legend class="secaoContato-form-legend">
               Oi, tudo bem? Fale com a gente!
               Preencha seus dados e sua mensagem:
-            </p>
+            </legend>
 
             <div class="contatoCampo contatoCampo--sucesso">
               <label for="nome">Nome: </label>
@@ -392,8 +392,8 @@
               <textarea name="" cols="30" rows="10" required></textarea>
             </div>
 
-            <div class="contatoCampo">
-              <input type="checkbox" checked value="receberDestaques" class="contatoCampo-checkbox" id="receberEmail">
+            <div class="contatoCampo" >
+              <input type="checkbox" checked value="receberDestaques" tabindex="0" class="contatoCampo-checkbox" id="receberEmail" >
               <label class="contatoCampo-label" for="receberEmail">Receber destaques por email</label>
             </div>
 
@@ -405,7 +405,7 @@
                 Verifique os erros acima
               </span>
             </div>
-
+          </fieldset>
           </form>
         </div>
         <!--fim .container da .secaoContato-->
