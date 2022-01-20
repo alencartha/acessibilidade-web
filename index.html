@@ -26,10 +26,9 @@
 
 </head>
 
-<body >
+<body>
 
   <div id="conteudoForaDialog">
-
     <a href="#conteudoPrincipal" class="pularNavegacao">Pular para conteúdo principal</a>
 
     <header class="cabecalho container">
@@ -134,9 +133,8 @@
           <p class="secaoSobre-texto">
             Preocupados com o modelo atual em que um aplicativo é criado entregue e a manutenção é vista como um custo
             extra para o cliente, decidimos criar um novo modelo de negócio, em que você assina nosso serviço, nós
-            criamos
-            o aplicativo e a manutenção já é inclusa no serviço. Dessa maneira você não se preocupa com atualização, é
-            tudo por nossa conta.
+            criamos o aplicativo e a manutenção já é inclusa no serviço. Dessa maneira você não se preocupa com
+            atualização, é tudo por nossa conta.
           </p>
           <p class="secaoSobre-texto">
             <b>
@@ -184,7 +182,7 @@
               R$ 1500
             </span>
             <ul class="secaoPlanos-plano-itens">
-              <li>20 manutenções mensais </li>
+              <li>20 manutenções mensais</li>
               <li>App SEO</li>
               <li>4 sistemas operacionais</li>
               <li>24h de atendimento</li>
@@ -220,9 +218,11 @@
           BLOG
         </h2>
 
-        <ul class="listaDeArtigos">
+        <h3 id="tituloBlog" class="escondeVisualmente">Lista de artigos mais vistos na semana</h3>
 
-          <li id="new0" class="listaDeArtigos-item">
+        <ol class="listaDeArtigos" aria-labelledby="tituloBlog">
+
+          <li id="new0" class="listaDeArtigos-item" data-noticia="0">
             <article class="listaDeArtigos-artigo">
               <img src="img/10-aplicativos-mais-baixados.png" class="listaDeArtigos-artigo-img" alt>
               <h2 class="listaDeArtigos-artigo-titulo">
@@ -230,8 +230,7 @@
               </h2>
               <p>
                 Listamos nesta semana alguns aplicativos que estão se destacando no mundo inteiro e merecem a sua
-                atenção.
-                Agora, mostramos os 10 apps mais badalados do momento e por que eles estão ganhando destaque.
+                atenção. Agora, mostramos os 10 apps mais badalados do momento e por que eles estão ganhando destaque.
                 <a href="#" class="listaDeArtigos-artigo-link">
                   Continuar lendo o post 1
                 </a>
@@ -239,7 +238,7 @@
             </article>
           </li>
 
-          <li id="new1" class="listaDeArtigos-item">
+          <li id="new1" class="listaDeArtigos-item" data-noticia="1">
             <article class="listaDeArtigos-artigo">
               <img src="img/ux-usabilidade.jpg" class="listaDeArtigos-artigo-img" alt>
               <h2 class="listaDeArtigos-artigo-titulo">
@@ -255,7 +254,7 @@
             </article>
           </li>
 
-          <li id="new2" class="listaDeArtigos-item">
+          <li id="new2" class="listaDeArtigos-item" data-noticia="2">
             <article class="listaDeArtigos-artigo">
               <img src="img/dicas-acessibilidade.jpg" class="listaDeArtigos-artigo-img" alt>
               <h2 class="listaDeArtigos-artigo-titulo">
@@ -271,13 +270,13 @@
             </article>
           </li>
 
-        </ul>
+        </ol>
 
         <nav>
           <ul class="listaDeArtigos-slider">
             <li>
               <a href="#new0" data-sliderItem="0" class="listaDeArtigos-slider-item listaDeArtigos-slider-item--ativo">
-                Notícia 1
+                Notícia 1 <span class="escondeVisualmente">(Slide atual)</span>
               </a>
             </li>
             <li>
@@ -327,7 +326,6 @@
           </button>
         </div>
 
-        
 
       </section>
       <!--fim .secaoDestaques-->
@@ -478,14 +476,13 @@
         </nav>
       </div>
 
-
-
+    </footer>
   </div>
 
-  <div class="dialogNewsletter" id="dialogNewsletter" role="dialog" aria-labelledby="titulo-dialog">
-    <div class="dialogNewsletter-body">
 
-      <h2 class="dialogNewsletter-titulo" id="titulo-dialog">News sem spam</h2>
+  <div class="dialogNewsletter" id="dialogNewsletter" role="dialog" aria-labelledby="tituloDialog">
+    <div class="dialogNewsletter-body">
+      <h2 class="dialogNewsletter-titulo" id="tituloDialog">News sem spam</h2>
       <h3 class="dialogNewsletter-texto">
         Assine nossa newsletter para receber notícias técnicas sem spam!
       </h3>
@@ -493,12 +490,12 @@
         <label class="dialogNewsletter-label" for="emailNewsletter">
           Email:
         </label>
-        <input id="emailNewsletter" type="email" class="dialogNewsletter-campo"
-          placeholder="Digite seu e-mail...">
+        <input type="email" class="dialogNewsletter-campo" placeholder="Digite seu e-mail..." id="emailNewsletter">
         <button class="dialogNewsletter-btn" type="submit">
           Assinar newsletter
         </button>
         <button class="dialogNewsletter-fechar" type="button" aria-label="Fechar janela modal">
+          Fechar modal
         </button>
       </form>
     </div>
@@ -506,7 +503,6 @@
   </div>
   <!--fim .dialogNewsletter-->
 
-  </footer>
   <script src="js/carousel.js"></script>
   <script src="js/inert.js"></script>
   <script src="js/dialog.js"></script>
